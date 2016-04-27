@@ -51,7 +51,8 @@ set noerrorbells                        "Don't bell
 set autowrite                           "Save on buffer switch
 set mouse=a
 
-
+"Make split disappear
+hi vertsplit guifg=bg guibg=bg
 
 
 
