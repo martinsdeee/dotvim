@@ -140,7 +140,10 @@ endfunction
 autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
 autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
 
+"vim-php-cs-fixer
+let g:php_cs_fixer_level = "psr2"
 
+nnoremap <Leader><Leader>b :call PhpCsFixerFixFile()<CR>
 
 
 
