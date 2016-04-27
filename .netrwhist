@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/dumbrmar'
 let g:netrw_dirhist_2='/home/dumbrmar/Library'
 let g:netrw_dirhist_3='/home/dumbrmar'
+let g:netrw_dirhist_4='/home/dumbrmar/code/timeseets'
+let g:netrw_dirhist_5='/home/dumbrmar'

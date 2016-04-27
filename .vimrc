@@ -16,7 +16,7 @@ let g:mapleader = ','				    "Replace default leader backslash with comma
 
 "----------- Visuals -----------"
 
-colorscheme blackboard
+colorscheme abra
 
 set t_CO=256                            "Terminal colors 256
 
@@ -97,6 +97,14 @@ nmap <leader><space> :nohlsearch<cr>
 "Quit, close splits
 nmap <Leader>q :q<cr>
 
+"Give random colorscheme
+nmap <Leader>r :colorscheme random<cr>:colorscheme<cr>
+
+"Find tag
+nmap <Leader>f :tag<space>
+
+"Ctags Reload
+nmap <Leader>c :!ctags -R --exclude=node_modules --exclude=vendor<cr>
 
 
 
@@ -122,6 +130,20 @@ augroup sogroup
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
+
+
+
+
+
+"----------- Notes & Tips -----------"
+
+" - Press ',ev' to edit .vimrc
+" - Press ',w' to save file
+" - Press ',q' to quit or close split
+" - Press 'yy' to copy all line
+" - Press 'zz' to center a line
+" - Press ',c' to refresh all ctags or create new ctags file
+" - Press '<C-]>' to go defined function in class (Ctags)
 
 
 
