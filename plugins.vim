@@ -7,6 +7,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rakr/vim-rakr-light'
+Plugin 'tpope/vim-vinegar'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 
 " All of your Plugins must be added before the following line
