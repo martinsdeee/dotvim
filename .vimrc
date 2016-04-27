@@ -136,6 +136,18 @@ augroup END
 
 
 
+"----------- Laravel Specific -----------"
+
+nmap <Leader>lr :e app/Http/routes.php<cr>
+nmap <Leader>lm :!php artisan make:
+nmap <Leader><Leader>c :e app/Http/Controllers/<cr>
+nmap <Leader><Leader>m :e app/<cr>
+nmap <Leader><Leader>v :e resources/views/<cr>
+
+
+
+
+
 "----------- Notes & Tips -----------"
 
 " - Press ',ev' to edit .vimrc
