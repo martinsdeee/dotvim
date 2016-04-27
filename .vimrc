@@ -112,6 +112,10 @@ nmap <Leader>f :tag<space>
 "Ctags Reload
 nmap <Leader>c :!ctags -R --exclude=node_modules --exclude=vendor<cr>
 
+"PHPDocumentator
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+nnoremap <Leader>d :call pdv#DocumentWithSnip()<CR>
+
 
 
 
@@ -142,8 +146,11 @@ autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
 
 "vim-php-cs-fixer
 let g:php_cs_fixer_level = "psr2"
-
 nnoremap <Leader><Leader>b :call PhpCsFixerFixFile()<CR>
+
+"UltiSnips
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+nmap <Leader>es :UltiSnipsEdit
 
 
 
