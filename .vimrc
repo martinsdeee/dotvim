@@ -145,6 +145,8 @@ augroup END
 " - Press 'zz' to center a line
 " - Press ',c' to refresh all ctags or create new ctags file
 " - Press '<C-]>' to go defined function in class (Ctags)
+" - Press 'gg' to go file top
+" - Press 'G' to go file bottom
 
 
 
