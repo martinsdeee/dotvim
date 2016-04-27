@@ -45,14 +45,19 @@ set shiftwidth=4                        "Number of spaces for autoindent
 set shiftround                          "Use multiple shiftspaces when indenting with '<' and '>'
 set autoindent                          "Always set autoindenting on
 set copyindent                          "Copy previeos indentingon autoindenting
-set timeout timeoutlen=200 ttimeoutlen=100
+set timeout timeoutlen=400 ttimeoutlen=200
 set visualbell                          "Don't bell
 set noerrorbells                        "Don't bell
-set autowrite                           "Save on buffer switch
+set autowriteall                        "Automatically save file when switching buffers
 set mouse=a
 
 "Make split disappear
 hi vertsplit guifg=bg guibg=bg
+
+"Autocomplete
+set complete=.,w,b,u                    "Set autocomplete       
+
+
 
 
 
@@ -119,6 +124,22 @@ map <C-B> :NERDTreeToggle<cr>
 "CTRLP
 map <C-r> :CtrlPBufTag<cr>
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|vendor\'
+
+"vim-php-namespace
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
+
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
+
 
 
 
