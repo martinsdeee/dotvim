@@ -16,7 +16,7 @@ let g:mapleader = ','				    "Replace default leader backslash with comma
 
 "----------- Visuals -----------"
 
-colorscheme abra
+colorscheme blackboard
 
 set t_CO=256                            "Terminal colors 256
 
@@ -103,6 +103,9 @@ nmap <leader><space> :nohlsearch<cr>
 "Quit, close splits
 nmap <Leader>q :q<cr>
 
+"Easy reachable escape
+imap jj <esc>
+
 "Give random colorscheme
 nmap <Leader>r :colorscheme random<cr>:colorscheme<cr>
 
@@ -123,11 +126,11 @@ nnoremap <Leader>d :call pdv#DocumentWithSnip()<CR>
 
 "NERDTree
 let NERDTreeHijackNetrw = 0
-map <C-B> :NERDTreeToggle<cr>
+map <C-k><C-b> :NERDTreeToggle<cr>
 
 "CTRLP
 map <C-r> :CtrlPBufTag<cr>
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|vendor\'
+let g:ctrlp_custom_ignore = 'vendor\|node_modules\|DS_Store\|git'
 
 "vim-php-namespace
 function! IPhpInsertUse()
@@ -190,7 +193,9 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 " - Press '<C-]>' to go defined function in class (Ctags)
 " - Press 'gg' to go file top
 " - Press 'G' to go file bottom
-
+" - Press ',,b' to trigger prefixer
+" - Press ',d' to make function documentation comment
+" - Press '<C-n>' multiple cursor select
 
 
 
