@@ -18,6 +18,11 @@ let g:mapleader = ','				    "Replace default leader backslash with comma
 
 colorscheme blackboard
 
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='wombat'
+
 set t_CO=256                            "Terminal colors 256
 
 set guioptions-=e                       "We don't want gui tabs
