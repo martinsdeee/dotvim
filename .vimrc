@@ -160,7 +160,15 @@ nnoremap <Leader><Leader>b :call PhpCsFixerFixFile()<CR>
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
 nmap <Leader>es :UltiSnipsEdit
 
+"Syntastic (linter)
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
 "----------- Auto-Commands -----------"

@@ -23,6 +23,7 @@ Plugin 'rstacruz/sparkup'
 Plugin 'powerline/powerline'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/syntastic'
 
 
 " All of your Plugins must be added before the following line
