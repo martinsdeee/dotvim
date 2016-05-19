@@ -102,8 +102,11 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 "Save trigger
 nmap <Leader>w :w<cr>
 
+"Trigger phpunit
+nmap <Leader>t :!clear&&phpunit %<cr>
+
 "Turn off search highlight
-nmap <leader><space> :nohlsearch<cr>
+nmap <Leader><space> :nohlsearch<cr>
 
 "Quit, close splits
 nmap <Leader>q :q<cr>
@@ -209,6 +212,7 @@ nmap <Leader><Leader>v :e resources/views/<cr>
 " - Press ',,b' to trigger prefixer
 " - Press ',d' to make function documentation comment
 " - Press '<C-n>' multiple cursor select
+" - Press ',t' phpunit test trigger
 
 
 

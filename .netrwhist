@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/martinsdeee/Code/vedic/app/Http/Controllers'
 let g:netrw_dirhist_2='/home/martinsdeee/Code/sandbox'
 let g:netrw_dirhist_3='/home/martinsdeee/Code/business'
+let g:netrw_dirhist_4='/home/martinsdeee/.homestead'
+let g:netrw_dirhist_5='/home/martinsdeee/Code/tara'
+let g:netrw_dirhist_6='/home/martinsdeee/Code/tara/app/Vedic/Panchanga'
+let g:netrw_dirhist_7='/home/martinsdeee/Code/tara'

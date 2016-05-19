@@ -1,3 +1,21 @@
+snippet php
+<?php
+
+namespace ${1};
+
+class ${2:ClassName}
+{
+	${3://}
+}
+endsnippet
+
+snippet class
+class ${1:ClassName}
+{
+	${2://}
+}
+endsnippet
+
 snippet met
 public function ${1:method}()
 {
@@ -7,4 +25,27 @@ endsnippet
 
 snippet $
 $this->${1};
+endsnippet
+
+snippet tclass
+<?php
+
+use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+class ${1:Something}Test extends TestCase
+{
+	${2://}
+}
+endsnippet
+
+snippet tmet
+/**
+ * @test
+ */
+public function ${1:it_test_my_method_in_class}()
+{
+	${2:$this->assertTrue(true)};
+}
 endsnippet
